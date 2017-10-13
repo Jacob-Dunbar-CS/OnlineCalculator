@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+		<title>OnCalc</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+    <div>
+      <br>
+      <h1>Online Calculator</h1>
+      <br>
+      <br>
+    </div>
+    <div>
+      <p>
+      <label>First #</label>
+      <input type="text" id="1N" name= "first number">
+	  <input type="button" class="button" value="Submit" onclick="number1()">
+		
+      </p>
+		<script language="javascript" type="text/javascript">\
+		function number1() {
+			var num1 = documents.getElementById("1N")
+		}
+		</script>
+    </div>
+    <div>
+		<br>
+		<br>
+		<form name="calculator">
+			<input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+			<input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+			<input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+			<input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+		</form>
+    </div>
+    <div>
+      <p>
+        <br>
+        <br>
+		<label>Second #</label>
+		<input type="text" id="2N">
+		<input type="button" class="button" value="Submit" onclick="number2()">
+      </p>
+		<script language="javascript" type="text/javascript">
+		function number2(); {
+			var num2 = documents.getElementById("2N")
+		}
+		</script>
+    </div>
+    <div>
+      <br>
+      <br>
+      <button type="button" class="button" onclick="document.calculator.ans.value=eval(document.ans.value)">=</button>
+	  <br>
+	  <br>
+	  Answer is <input type="textfield" name="ans" value="">
+	  
+	  <!--<script language="javascript" type = "text/javascript">
+	  function equationEval(); {
+	  var eq = 1N + opr + 2N;
+	  }
+	  function answerFunction(); {
+	  var ans = eval(eq);
+	  document.getElementById("answer").innerHTML = ans
+	  }
+	  </script>-->
+	  
+    </div>
+  </body>
+</html>
